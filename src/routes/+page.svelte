@@ -23,7 +23,8 @@
 						is_valid_url = true;
 						return parseURL(url, 'v')
 				} else if (url.startsWith('https://www.youtu.be/') || url.startsWith('https://youtu.be/')) {
-					return url.split("/").reverse()[0].split("?")[0];
+						is_valid_url = true;
+						return url.split("/").reverse()[0].split("?")[0];
 				} else if (url.startsWith('https://www.google.com/url?') || url.startsWith('https://google.com/url?')) {
 						const youtube = parseURL(url, 'url');
 						const youtube_parsed = decodeURIComponent(youtube!)
